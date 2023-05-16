@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group = 'pe.kr.ddakker'
+version = ''
+
+compileJava.options.encoding = 'UTF-8'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
+
+jar {
+    manifest {
+        attributes "Main-Class": "pe.kr.ddakker.util.JarCheck"
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
